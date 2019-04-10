@@ -1,0 +1,57 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Week11HW</title>
+  <script>
+    //browser direct
+    function newPage() {
+      window.location.assign('http://www.espn.com');
+    }
+
+    //go back and go forward
+    function goBack() {
+      window.history.back();
+    }
+
+    function goFwd() {
+      window.history.back();
+    }
+  </script>
+
+  <head>
+
+  <body>
+    <button onclick='goBack()'>Go Back</button>
+    <button onclick='goFwd()'>Go frwd</button>
+    <p id='browser'></p>
+    <script>
+      //browser URL
+      document.getElementById('browser').innerHTML =
+        'The URL of the page is' + window.location.href;
+    </script>
+    <h2>Timing</h2>
+    <button onclick='setTimeout(funcStart,4000);'>Run</button><br>
+    <script>
+      //timing
+      function funcStart() {
+        alert('Thanksfawdafarasfawe');
+      }
+    </script>
+    <input type='button' value='load website' onclick='newPage()'><br>
+    <button onclick="myFunction()">Click for cookies</button>
+
+    <p id="demo"></p>
+
+    <script>
+      //cookies enabled true or false
+      function myFunction() {
+        var x = 'Cookies enabled: ' + navigator.cookieEnabled;
+        document.getElementById('demo').innerHTML = x;
+      }
+    </script>
+  </body>
+
+</html>

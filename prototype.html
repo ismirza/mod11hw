@@ -1,0 +1,37 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Week11HW</title>
+  <p id="constructor" x></p>
+  <script>
+    //Constructor for Person objectn
+    function Car(make, model, year, color, favcar, grey, fast) {
+      this.make = make;
+      this.model = model;
+      this.year = year;
+      this.color = color;
+      this.favcar = favcar;
+      this.grey = grey;
+      this.fast = fast;
+    }
+
+    var favoriteCar = new Car('Nissan', 'GTR', '2002', 'grey', 'car', 'this color', 'fastest');
+
+    //display result
+    document.getElementById('constructor').innerHTML = 'My favorite car is ' +
+      favoriteCar.make + '  ' + favoriteCar.model + ' of  ' + favoriteCar.year +
+      '. And my favorite color of this car is ' + favoriteCar.color +
+      '. This is my favorite ' + favoriteCar.favcar + '. I like ' +
+      favoriteCar.grey + ' because it suits the best, '
+      + ' and because it is one of the' + favoriteCar.fast;
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
